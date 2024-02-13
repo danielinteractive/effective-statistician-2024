@@ -60,19 +60,33 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 ::: {.incremental}
 
-- I would like to kick off a good discussion (hopefully also beyond this talk) so that we can learn from each other
-- I would like you to reflect on how biostatistics is being carried out on a daily basis in your organizations
+- I would like to kick off a good **discussion** (hopefully also beyond this talk) so that we can learn from each other
+- I would like you to **reflect** on how biostatistics is being carried out on a daily basis in your organizations
   - Why biostatistics? Because we are at Effective Statistician 2024, and also that is what I know about most about
-- I would like you to strive to get yourself savvy in good software engineering practices and apply them in your daily job
-- I would like you to influence your biostatistics colleagues and departments in our organizations
+- I would like you to **strive** to get yourself savvy in good software engineering practices and apply them in your daily job
+- I would like you to **influence** your biostatistics colleagues and departments in our organizations
 
 :::
 
-## What can happen due to bad coding?
+# What can happen due to bad coding?
+
+## Banking example
+
+![[https://techhq.com/2024/01/what-role-does-tech-play-in-the-post-office-scandal](https://techhq.com/2024/01/what-role-does-tech-play-in-the-post-office-scandal)](post-office-part1.png)
+
+## Banking example (cont'd)
+
+![[https://www.bbc.com/news/business-56718036](https://www.bbc.com/news/business-56718036)](post-office-part3.png)
+
+## Banking example (cont'd)
+
+![[https://www.theguardian.com/uk-news/2024/jan/09/how-the-post-offices-horizon-system-failed-a-technical-breakdown](https://www.theguardian.com/uk-news/2024/jan/09/how-the-post-offices-horizon-system-failed-a-technical-breakdown)](post-office-part2.png)
+
+## Politics example
 
 ![[https://www.swissinfo.ch/eng/swiss-government-corrects-election-figures-on-political-party-strength/48924206](https://www.swissinfo.ch/eng/swiss-government-corrects-election-figures-on-political-party-strength/48924206)](news-part1.png)
 
-## What can happen due to bad coding? (cont'd)
+## Politics example (cont'd)
 
 ![[https://www.swissinfo.ch/eng/swiss-government-corrects-election-figures-on-political-party-strength/48924206](https://www.swissinfo.ch/eng/swiss-government-corrects-election-figures-on-political-party-strength/48924206)](news-part2.png)
 
@@ -115,14 +129,14 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 ::: {.incremental}
 
-- Most of the coding we do alone without any discussion or review
-- We often copy and paste code from each other and adapt it every time
-- We often distinguish ourselves from "Statistical Programmers" and give them instructions  
+- Most of the coding we do **alone** without any discussion or review
+- We often **copy and paste** code from each other and adapt it every time
+- We often **distinguish** ourselves from "Statistical Programmers" and give them instructions  
   (and feel we are better than them)
-- We often shy away from sharing our code because we think it is too ugly
-- We often don't take enough time to write clean code because we are too busy
-- We often just develop code locally on our laptops
-- We rarely use version control systems
+- We often shy away from sharing our code because we think it is too **ugly**
+- We often don't take enough **time** to write clean code because we are too busy
+- We often just develop code **locally** on our laptops
+- We rarely use **version control** systems
 
 :::
 
@@ -134,9 +148,9 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 - Statisticians (too) take vacations, go on longer leave, switch companies, etc.
 - Then another statistician (peers, managers) needs to back up or take over the project
-- They might need to revisit the design or analyses and thus need to modify the code
-- Might not find the code at all (because not in a version controlled repository)
-- Might not be able to understand the code (because unreadable by others)
+- They might need to revisit the design or analyses and thus need to **modify** the code
+- Might not **find** the code at all (because not in a version controlled repository)
+- Might not be able to **understand** the code (because unreadable by others)
 
 :::
 
@@ -144,12 +158,12 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 ::: {.incremental}
 
-- Not just switching between different statisticians, but also over time, things can become difficult
+- Not just switching between different statisticians, but also **over time**, things can become difficult
   - When I read code from one, two years ago, it is almost code from another person
   - If I look back at my quickly written, ugly code, which is not documented, I have a very hard time
-- If you change to the copy and paste code, it won't help anybody else
-  - If you discover bugs, those cannot be fixed across projects in one go
-  - If you add functionality, it will not be inherited by the other projects
+- In the "copy and paste workflow", you can't help anybody else
+  - If you discover **bugs**, those cannot be fixed across projects in one go
+  - If you add **features**, they cannot be used by anybody else
 
 :::
 
@@ -157,10 +171,10 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 ::: {.incremental}
 
-- If we change the code and don't have tests, we don't know if it still works correctly
+- If we modify the code and don't have tests, we simply **don't know** if it still works correctly
 - Typically we just run then the whole script again and if it does not fail with an error we think it is fine 
-- But it might still produce wrong results due to new bugs
-- And if we fix a bug, and don't add a test for it at the same time, it might come back later
+- But it might still produce **wrong results** due to new bugs
+- And if we fix a bug, and don't add a test for it at the same time, it might **come back** later
 - This is even more important in software packages that we create for us and others
 
 :::
@@ -170,11 +184,11 @@ Its content started from a panel discussion on "Research Software Engineering fo
 ::: {.incremental}
 
 - When we don't prepare for it, new versions of software packages can lead to different results  
-  ⇨ This can be a real problem e.g. during inspections
-- Very hard to reproduce manual steps:
+  ⇨ This can be a **real problem** e.g. during inspections
+- Very hard to reproduce **manual steps**:
   - e.g. moving data around, running scripts, creating documents, etc.
   - would need to be thoroughly documented to have a small chance, but that is usually omitted
-- But Statistics is a key component of the scientific value chain ...   
+- But Statistics is a key component of the **scientific value chain** ...   
   ... thus has a responsibility to ensure reproducibility 
 
 :::
@@ -183,11 +197,11 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 ::: {.incremental}
 
-- If we cannot share reliably internally in the company, then less so with external stakeholders
-- So far, analyses that need to be shared with regulators are often rewritten by statistical programmers
+- If we **cannot share reliably** internally in the company, then less so with external stakeholders
+- So far, analyses that need to be shared with regulators are often rewritten by **statistical programmers**
   - Duplicates the work with original coding and has additional risk of introducing bugs
   - But is usually not done for study protocol contents (sample size, simulations)
-- Often reporting code was translated to proprietary software because that was considered the only "validated" way
+- Often reporting code was translated to proprietary software because that was considered the only **"validated"** way
   - Still can have bugs in any software and the actual analysis scripts and macros
 
 :::
@@ -199,13 +213,13 @@ Its content started from a panel discussion on "Research Software Engineering fo
 ::: {.incremental}
 
 - Most statisticians actually have examples where lax programming led to such problems
-- Let's realize that a lot is at stake:   
+- Let's realize that **a lot** is at stake:   
   we are not building airplanes that could fall from the sky ...   
-  ... but we are impacting the life of patients!
+  ... but we are impacting the **life of patients**!
 - It matters for patients that we 
-  - calculate the right sample size, 
-  - more generally determine the right clinical trial design, 
-  - help finding the right molecules based on preclinical experiments, 
+  - calculate the **right** sample size, 
+  - more generally determine the **right** clinical trial design, 
+  - help finding the **right** molecules based on preclinical experiments, 
   - etc.
 
 :::
@@ -218,14 +232,14 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 ::: {.incremental}
 
-- We know what we should do, let's just take the time and energy to do it
-- We can learn a lot from the statistical programmers:
-  - organize ourselves with standards (starts with naming conventions for files and folders)
-  - automate repetitive tasks
-  - consider double programming of key results
-- Processes should consider code in the same priority as documents (statistical analysis plans etc.)
-  - that implies code review, good and consistent code style, business continuity, ...
-- Strive to be on par with Tech companies with regards to coding quality
+- We **know** what we should do, let's just take the time and energy to do it
+- We can **learn** a lot from the statistical programmers:
+  - organize ourselves with **standards** (starts with naming conventions for files and folders)
+  - **automate** repetitive tasks
+  - consider **double programming** of key results
+- Processes should consider code in the **same priority** as documents (statistical analysis plans etc.)
+  - that implies code **review**, good and consistent code **style**, ensuring **business continuity**, ...
+- Strive to be on par with Tech companies with regards to **coding quality**
 
 :::
 
@@ -237,13 +251,13 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 ::: {.incremental}
 
-- Starts with secondary schools: 
+- Starts with **secondary schools**: 
   - computer science should become a standard subject, not just be an extra
   - same importance as math, geography, physics, etc.
-- Continues with undergraduate and graduate programs:
+- Continues at **university** with undergraduate and graduate programs:
   - computer science must become a key component of statistics and data science programs
   - good software engineering practices warrant dedicated courses
-- Continues with post-graduate education during the work life:   
+- Continues with **post-graduate** education during the work life:   
   online courses, software engineering workshops, conference sessions, etc.
 
 :::
@@ -252,12 +266,12 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 ::: {.incremental}
 
-- Research Software Engineering teams are now established in academia, including data science institutions
+- **Research Software Engineering** (RSE) teams are now established in academia, including data science institutions
 - Similarly pharma companies are establishing software engineering focused teams
 - Direct focus is often development of reusable software
-- We should not stop there but also strive to improve the day to day work:   
+- We should not stop there but also strive to improve the **day to day work**:   
   biostatistics, medical writing, preclinical experiments, etc.
-- Software engineering work is complex, so we need top talents for this
+- Software engineering work is complex, so we need **top talents** for this
 
 :::
 
@@ -265,12 +279,12 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 ::: {.incremental}
 
-- Need to be able to attract and retain top talents
-- Defining the job role can have different perspectives
+- Need to be able to **attract and retain** top talents
+- Defining the **job role** can have different perspectives
   - We can think about an evolution of "statistical programmers"
   - Or a convergence of "statisticians" and "statistical programmers"
   - Or a new definition of "statistical software engineers"
-- Important is to make these careers attractive:
+- Important is to make these **careers attractive**:
   - same compensation as for biostatisticians or methodology experts
   - same respect in the hierarchy of disciplines
   - same career levels possible including leadership roles
@@ -281,15 +295,15 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 ::: {.incremental}
 
-- More natural now that we use R and other open source software
-- Has been made so much easier in the last decade  
+- More **natural** now that we use R and other open source software
+- Has become very **easy** in the last decade  
   (e.g. video conferencing, cloud based documents, code sharing platforms)
-- Stakeholders ask for companies to work together towards standards,   
+- **Stakeholders** ask for companies to work together towards standards,   
   rather than receiving different solutions from each company
-- Loosely coupled software modules allow to "plug and play"
+- Loosely coupled software modules allow to **"plug and play"**
   - combining different modules to make them fit company standards
-  - conneting to internals via company specific extensions
-- Key opportunity in contrast to previous proprietary software based, company siloed, stack
+  - connecting to internals via company specific extensions
+- **Key opportunity** in contrast to previous proprietary software based, company siloed, stack
 
 :::
 
@@ -299,7 +313,7 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 ::: {.incremental}
 
-- `crm` stands for continual reassessment method (Bayesian design for dose escalation)
+- `crm` stands for **continual reassessment method** (Bayesian design for dose escalation)
 - We started in 2013 with custom R scripts running `JAGS` code to run Markov Chain Monte Carlo (MCMC)
 - Realized in 2014 that we need to have a way to avoid copy and paste of these via an R package
 - Published on CRAN in 2015
@@ -312,13 +326,13 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 ::: {.incremental}
 
-- Has been founded in August 2022 as working group in the ASA Biopharmaceutical Section
-- ~40 members from over 25 pharma companies, CRO, etc.
+- Has been founded in August 2022 as working group in the **ASA Biopharmaceutical Section**
+- $>$ 40 members from $>$ 25 pharma companies, CRO, etc.
   - open for new members
 - Focuses on 
   1. building packages together (already on CRAN are `mmrm` and `brms.mmrm`)
-  2. disseminating good software engineering (SWE) practices (workshops, videos)
-- See more on [openstatsware.org](openstatsware.org)
+  2. disseminating good software engineering practices (workshops, videos)
+- Visit [openstatsware.org](openstatsware.org) to learn more
 
 :::
 
@@ -363,6 +377,10 @@ Its content started from a panel discussion on "Research Software Engineering fo
 
 :::
 
+## Upcoming seminar on reproducibility
+
+![[https://baselbiometrics.github.io/home/docs/upcoming/20240412/agenda.pdf](https://baselbiometrics.github.io/home/docs/upcoming/20240412/agenda.pdf)](bbs-seminar.png)
+
 ## Thank you!
 
 These slides are at  
@@ -370,3 +388,5 @@ These slides are at
 
 Feel free to connect at  
 [linkedin.com/in/danielsabanesbove](https://www.linkedin.com/in/danielsabanesbove/)
+
+![](research-progress.png)
