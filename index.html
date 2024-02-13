@@ -347,6 +347,7 @@ Daniel Sabanés Bové (Roche)
 <h2 id="toc-title">Table of contents</h2>
 <ul>
 <li><a href="#/preamble" id="/toc-preamble">Preamble</a></li>
+<li><a href="#/what-can-happen-due-to-bad-coding" id="/toc-what-can-happen-due-to-bad-coding">What can happen due to bad coding?</a></li>
 <li><a href="#/programming-is-ubiquitous-but-still-neglected" id="/toc-programming-is-ubiquitous-but-still-neglected">Programming is ubiquitous, but (still) neglected</a></li>
 <li><a href="#/why-is-this-a-problem" id="/toc-why-is-this-a-problem">Why is this a problem?</a></li>
 <li><a href="#/what-can-we-do-about-it" id="/toc-what-can-we-do-about-it">What can we do about it?</a></li>
@@ -394,22 +395,39 @@ Daniel Sabanés Bové (Roche)
 <h2>Objective of this talk</h2>
 <div>
 <ul>
-<li class="fragment">I would like to kick off a good discussion (hopefully also beyond this talk) so that we can learn from each other</li>
-<li class="fragment">I would like you to reflect on how biostatistics is being carried out on a daily basis in your organizations
+<li class="fragment">I would like to kick off a good <strong>discussion</strong> (hopefully also beyond this talk) so that we can learn from each other</li>
+<li class="fragment">I would like you to <strong>reflect</strong> on how biostatistics is being carried out on a daily basis in your organizations
 <ul>
 <li class="fragment">Why biostatistics? Because we are at Effective Statistician 2024, and also that is what I know about most about</li>
 </ul></li>
-<li class="fragment">I would like you to strive to get yourself savvy in good software engineering practices and apply them in your daily job</li>
-<li class="fragment">I would like you to influence your biostatistics colleagues and departments in our organizations</li>
+<li class="fragment">I would like you to <strong>strive</strong> to get yourself savvy in good software engineering practices and apply them in your daily job</li>
+<li class="fragment">I would like you to <strong>influence</strong> your biostatistics colleagues and departments in our organizations</li>
 </ul>
 </div>
+</section></section>
+<section>
+<section id="what-can-happen-due-to-bad-coding" class="title-slide slide level1 center">
+<h1>What can happen due to bad coding?</h1>
+
 </section>
-<section id="what-can-happen-due-to-bad-coding" class="slide level2">
-<h2>What can happen due to bad coding?</h2>
+<section id="banking-example" class="slide level2">
+<h2>Banking example</h2>
+
+<img data-src="post-office-part1.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://techhq.com/2024/01/what-role-does-tech-play-in-the-post-office-scandal">https://techhq.com/2024/01/what-role-does-tech-play-in-the-post-office-scandal</a></p></section>
+<section id="banking-example-contd" class="slide level2">
+<h2>Banking example (cont’d)</h2>
+
+<img data-src="post-office-part3.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.bbc.com/news/business-56718036">https://www.bbc.com/news/business-56718036</a></p></section>
+<section id="banking-example-contd-1" class="slide level2">
+<h2>Banking example (cont’d)</h2>
+
+<img data-src="post-office-part2.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.theguardian.com/uk-news/2024/jan/09/how-the-post-offices-horizon-system-failed-a-technical-breakdown">https://www.theguardian.com/uk-news/2024/jan/09/how-the-post-offices-horizon-system-failed-a-technical-breakdown</a></p></section>
+<section id="politics-example" class="slide level2">
+<h2>Politics example</h2>
 
 <img data-src="news-part1.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.swissinfo.ch/eng/swiss-government-corrects-election-figures-on-political-party-strength/48924206">https://www.swissinfo.ch/eng/swiss-government-corrects-election-figures-on-political-party-strength/48924206</a></p></section>
-<section id="what-can-happen-due-to-bad-coding-contd" class="slide level2">
-<h2>What can happen due to bad coding? (cont’d)</h2>
+<section id="politics-example-contd" class="slide level2">
+<h2>Politics example (cont’d)</h2>
 
 <img data-src="news-part2.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.swissinfo.ch/eng/swiss-government-corrects-election-figures-on-political-party-strength/48924206">https://www.swissinfo.ch/eng/swiss-government-corrects-election-figures-on-political-party-strength/48924206</a></p></section>
 <section id="another-example-now-from-biostatistics" class="slide level2">
@@ -458,14 +476,14 @@ Daniel Sabanés Bové (Roche)
 <h2>But many don’t take it serious enough</h2>
 <div>
 <ul>
-<li class="fragment">Most of the coding we do alone without any discussion or review</li>
-<li class="fragment">We often copy and paste code from each other and adapt it every time</li>
-<li class="fragment">We often distinguish ourselves from “Statistical Programmers” and give them instructions<br>
+<li class="fragment">Most of the coding we do <strong>alone</strong> without any discussion or review</li>
+<li class="fragment">We often <strong>copy and paste</strong> code from each other and adapt it every time</li>
+<li class="fragment">We often <strong>distinguish</strong> ourselves from “Statistical Programmers” and give them instructions<br>
 (and feel we are better than them)</li>
-<li class="fragment">We often shy away from sharing our code because we think it is too ugly</li>
-<li class="fragment">We often don’t take enough time to write clean code because we are too busy</li>
-<li class="fragment">We often just develop code locally on our laptops</li>
-<li class="fragment">We rarely use version control systems</li>
+<li class="fragment">We often shy away from sharing our code because we think it is too <strong>ugly</strong></li>
+<li class="fragment">We often don’t take enough <strong>time</strong> to write clean code because we are too busy</li>
+<li class="fragment">We often just develop code <strong>locally</strong> on our laptops</li>
+<li class="fragment">We rarely use <strong>version control</strong> systems</li>
 </ul>
 </div>
 </section></section>
@@ -480,9 +498,9 @@ Daniel Sabanés Bové (Roche)
 <ul>
 <li class="fragment">Statisticians (too) take vacations, go on longer leave, switch companies, etc.</li>
 <li class="fragment">Then another statistician (peers, managers) needs to back up or take over the project</li>
-<li class="fragment">They might need to revisit the design or analyses and thus need to modify the code</li>
-<li class="fragment">Might not find the code at all (because not in a version controlled repository)</li>
-<li class="fragment">Might not be able to understand the code (because unreadable by others)</li>
+<li class="fragment">They might need to revisit the design or analyses and thus need to <strong>modify</strong> the code</li>
+<li class="fragment">Might not <strong>find</strong> the code at all (because not in a version controlled repository)</li>
+<li class="fragment">Might not be able to <strong>understand</strong> the code (because unreadable by others)</li>
 </ul>
 </div>
 </section>
@@ -490,15 +508,15 @@ Daniel Sabanés Bové (Roche)
 <h2>Cannot maintain code</h2>
 <div>
 <ul>
-<li class="fragment">Not just switching between different statisticians, but also over time, things can become difficult
+<li class="fragment">Not just switching between different statisticians, but also <strong>over time</strong>, things can become difficult
 <ul>
 <li class="fragment">When I read code from one, two years ago, it is almost code from another person</li>
 <li class="fragment">If I look back at my quickly written, ugly code, which is not documented, I have a very hard time</li>
 </ul></li>
-<li class="fragment">If you change to the copy and paste code, it won’t help anybody else
+<li class="fragment">In the “copy and paste workflow”, you can’t help anybody else
 <ul>
-<li class="fragment">If you discover bugs, those cannot be fixed across projects in one go</li>
-<li class="fragment">If you add functionality, it will not be inherited by the other projects</li>
+<li class="fragment">If you discover <strong>bugs</strong>, those cannot be fixed across projects in one go</li>
+<li class="fragment">If you add <strong>features</strong>, they cannot be used by anybody else</li>
 </ul></li>
 </ul>
 </div>
@@ -507,10 +525,10 @@ Daniel Sabanés Bové (Roche)
 <h2>Cannot prevent bugs</h2>
 <div>
 <ul>
-<li class="fragment">If we change the code and don’t have tests, we don’t know if it still works correctly</li>
+<li class="fragment">If we modify the code and don’t have tests, we simply <strong>don’t know</strong> if it still works correctly</li>
 <li class="fragment">Typically we just run then the whole script again and if it does not fail with an error we think it is fine</li>
-<li class="fragment">But it might still produce wrong results due to new bugs</li>
-<li class="fragment">And if we fix a bug, and don’t add a test for it at the same time, it might come back later</li>
+<li class="fragment">But it might still produce <strong>wrong results</strong> due to new bugs</li>
+<li class="fragment">And if we fix a bug, and don’t add a test for it at the same time, it might <strong>come back</strong> later</li>
 <li class="fragment">This is even more important in software packages that we create for us and others</li>
 </ul>
 </div>
@@ -520,13 +538,13 @@ Daniel Sabanés Bové (Roche)
 <div>
 <ul>
 <li class="fragment">When we don’t prepare for it, new versions of software packages can lead to different results<br>
-⇨ This can be a real problem e.g.&nbsp;during inspections</li>
-<li class="fragment">Very hard to reproduce manual steps:
+⇨ This can be a <strong>real problem</strong> e.g.&nbsp;during inspections</li>
+<li class="fragment">Very hard to reproduce <strong>manual steps</strong>:
 <ul>
 <li class="fragment">e.g.&nbsp;moving data around, running scripts, creating documents, etc.</li>
 <li class="fragment">would need to be thoroughly documented to have a small chance, but that is usually omitted</li>
 </ul></li>
-<li class="fragment">But Statistics is a key component of the scientific value chain …<br>
+<li class="fragment">But Statistics is a key component of the <strong>scientific value chain</strong> …<br>
 … thus has a responsibility to ensure reproducibility</li>
 </ul>
 </div>
@@ -535,13 +553,13 @@ Daniel Sabanés Bové (Roche)
 <h2>Cannot submit to external stakeholders</h2>
 <div>
 <ul>
-<li class="fragment">If we cannot share reliably internally in the company, then less so with external stakeholders</li>
-<li class="fragment">So far, analyses that need to be shared with regulators are often rewritten by statistical programmers
+<li class="fragment">If we <strong>cannot share reliably</strong> internally in the company, then less so with external stakeholders</li>
+<li class="fragment">So far, analyses that need to be shared with regulators are often rewritten by <strong>statistical programmers</strong>
 <ul>
 <li class="fragment">Duplicates the work with original coding and has additional risk of introducing bugs</li>
 <li class="fragment">But is usually not done for study protocol contents (sample size, simulations)</li>
 </ul></li>
-<li class="fragment">Often reporting code was translated to proprietary software because that was considered the only “validated” way
+<li class="fragment">Often reporting code was translated to proprietary software because that was considered the only <strong>“validated”</strong> way
 <ul>
 <li class="fragment">Still can have bugs in any software and the actual analysis scripts and macros</li>
 </ul></li>
@@ -558,14 +576,14 @@ Daniel Sabanés Bové (Roche)
 <div>
 <ul>
 <li class="fragment">Most statisticians actually have examples where lax programming led to such problems</li>
-<li class="fragment">Let’s realize that a lot is at stake:<br>
+<li class="fragment">Let’s realize that <strong>a lot</strong> is at stake:<br>
 we are not building airplanes that could fall from the sky …<br>
-… but we are impacting the life of patients!</li>
+… but we are impacting the <strong>life of patients</strong>!</li>
 <li class="fragment">It matters for patients that we
 <ul>
-<li class="fragment">calculate the right sample size,</li>
-<li class="fragment">more generally determine the right clinical trial design,</li>
-<li class="fragment">help finding the right molecules based on preclinical experiments,</li>
+<li class="fragment">calculate the <strong>right</strong> sample size,</li>
+<li class="fragment">more generally determine the <strong>right</strong> clinical trial design,</li>
+<li class="fragment">help finding the <strong>right</strong> molecules based on preclinical experiments,</li>
 <li class="fragment">etc.</li>
 </ul></li>
 </ul>
@@ -579,18 +597,18 @@ we are not building airplanes that could fall from the sky …<br>
 <h2>Take software engineering seriously</h2>
 <div>
 <ul>
-<li class="fragment">We know what we should do, let’s just take the time and energy to do it</li>
-<li class="fragment">We can learn a lot from the statistical programmers:
+<li class="fragment">We <strong>know</strong> what we should do, let’s just take the time and energy to do it</li>
+<li class="fragment">We can <strong>learn</strong> a lot from the statistical programmers:
 <ul>
-<li class="fragment">organize ourselves with standards (starts with naming conventions for files and folders)</li>
-<li class="fragment">automate repetitive tasks</li>
-<li class="fragment">consider double programming of key results</li>
+<li class="fragment">organize ourselves with <strong>standards</strong> (starts with naming conventions for files and folders)</li>
+<li class="fragment"><strong>automate</strong> repetitive tasks</li>
+<li class="fragment">consider <strong>double programming</strong> of key results</li>
 </ul></li>
-<li class="fragment">Processes should consider code in the same priority as documents (statistical analysis plans etc.)
+<li class="fragment">Processes should consider code in the <strong>same priority</strong> as documents (statistical analysis plans etc.)
 <ul>
-<li class="fragment">that implies code review, good and consistent code style, business continuity, …</li>
+<li class="fragment">that implies code <strong>review</strong>, good and consistent code <strong>style</strong>, ensuring <strong>business continuity</strong>, …</li>
 </ul></li>
-<li class="fragment">Strive to be on par with Tech companies with regards to coding quality</li>
+<li class="fragment">Strive to be on par with Tech companies with regards to <strong>coding quality</strong></li>
 </ul>
 </div>
 </section>
@@ -602,17 +620,17 @@ we are not building airplanes that could fall from the sky …<br>
 <h2>Educate, educate, educate</h2>
 <div>
 <ul>
-<li class="fragment">Starts with secondary schools:
+<li class="fragment">Starts with <strong>secondary schools</strong>:
 <ul>
 <li class="fragment">computer science should become a standard subject, not just be an extra</li>
 <li class="fragment">same importance as math, geography, physics, etc.</li>
 </ul></li>
-<li class="fragment">Continues with undergraduate and graduate programs:
+<li class="fragment">Continues at <strong>university</strong> with undergraduate and graduate programs:
 <ul>
 <li class="fragment">computer science must become a key component of statistics and data science programs</li>
 <li class="fragment">good software engineering practices warrant dedicated courses</li>
 </ul></li>
-<li class="fragment">Continues with post-graduate education during the work life:<br>
+<li class="fragment">Continues with <strong>post-graduate</strong> education during the work life:<br>
 online courses, software engineering workshops, conference sessions, etc.</li>
 </ul>
 </div>
@@ -621,12 +639,12 @@ online courses, software engineering workshops, conference sessions, etc.</li>
 <h2>Establish dedicated teams</h2>
 <div>
 <ul>
-<li class="fragment">Research Software Engineering teams are now established in academia, including data science institutions</li>
+<li class="fragment"><strong>Research Software Engineering</strong> (RSE) teams are now established in academia, including data science institutions</li>
 <li class="fragment">Similarly pharma companies are establishing software engineering focused teams</li>
 <li class="fragment">Direct focus is often development of reusable software</li>
-<li class="fragment">We should not stop there but also strive to improve the day to day work:<br>
+<li class="fragment">We should not stop there but also strive to improve the <strong>day to day work</strong>:<br>
 biostatistics, medical writing, preclinical experiments, etc.</li>
-<li class="fragment">Software engineering work is complex, so we need top talents for this</li>
+<li class="fragment">Software engineering work is complex, so we need <strong>top talents</strong> for this</li>
 </ul>
 </div>
 </section>
@@ -634,14 +652,14 @@ biostatistics, medical writing, preclinical experiments, etc.</li>
 <h2>Provide attractive career paths</h2>
 <div>
 <ul>
-<li class="fragment">Need to be able to attract and retain top talents</li>
-<li class="fragment">Defining the job role can have different perspectives
+<li class="fragment">Need to be able to <strong>attract and retain</strong> top talents</li>
+<li class="fragment">Defining the <strong>job role</strong> can have different perspectives
 <ul>
 <li class="fragment">We can think about an evolution of “statistical programmers”</li>
 <li class="fragment">Or a convergence of “statisticians” and “statistical programmers”</li>
 <li class="fragment">Or a new definition of “statistical software engineers”</li>
 </ul></li>
-<li class="fragment">Important is to make these careers attractive:
+<li class="fragment">Important is to make these <strong>careers attractive</strong>:
 <ul>
 <li class="fragment">same compensation as for biostatisticians or methodology experts</li>
 <li class="fragment">same respect in the hierarchy of disciplines</li>
@@ -654,17 +672,17 @@ biostatistics, medical writing, preclinical experiments, etc.</li>
 <h2>Collaborate across companies</h2>
 <div>
 <ul>
-<li class="fragment">More natural now that we use R and other open source software</li>
-<li class="fragment">Has been made so much easier in the last decade<br>
+<li class="fragment">More <strong>natural</strong> now that we use R and other open source software</li>
+<li class="fragment">Has become very <strong>easy</strong> in the last decade<br>
 (e.g.&nbsp;video conferencing, cloud based documents, code sharing platforms)</li>
-<li class="fragment">Stakeholders ask for companies to work together towards standards,<br>
+<li class="fragment"><strong>Stakeholders</strong> ask for companies to work together towards standards,<br>
 rather than receiving different solutions from each company</li>
-<li class="fragment">Loosely coupled software modules allow to “plug and play”
+<li class="fragment">Loosely coupled software modules allow to <strong>“plug and play”</strong>
 <ul>
 <li class="fragment">combining different modules to make them fit company standards</li>
-<li class="fragment">conneting to internals via company specific extensions</li>
+<li class="fragment">connecting to internals via company specific extensions</li>
 </ul></li>
-<li class="fragment">Key opportunity in contrast to previous proprietary software based, company siloed, stack</li>
+<li class="fragment"><strong>Key opportunity</strong> in contrast to previous proprietary software based, company siloed, stack</li>
 </ul>
 </div>
 </section></section>
@@ -677,7 +695,7 @@ rather than receiving different solutions from each company</li>
 <h2>R Package <a href="https://roche.github.io/crmPack"><code>crmPack</code></a></h2>
 <div>
 <ul>
-<li class="fragment"><code>crm</code> stands for continual reassessment method (Bayesian design for dose escalation)</li>
+<li class="fragment"><code>crm</code> stands for <strong>continual reassessment method</strong> (Bayesian design for dose escalation)</li>
 <li class="fragment">We started in 2013 with custom R scripts running <code>JAGS</code> code to run Markov Chain Monte Carlo (MCMC)</li>
 <li class="fragment">Realized in 2014 that we need to have a way to avoid copy and paste of these via an R package</li>
 <li class="fragment">Published on CRAN in 2015</li>
@@ -690,17 +708,17 @@ rather than receiving different solutions from each company</li>
 <h2>Working group <a href="openstatsware.org"><code>openstatsware</code></a></h2>
 <div>
 <ul>
-<li class="fragment">Has been founded in August 2022 as working group in the ASA Biopharmaceutical Section</li>
-<li class="fragment">~40 members from over 25 pharma companies, CRO, etc.
+<li class="fragment">Has been founded in August 2022 as working group in the <strong>ASA Biopharmaceutical Section</strong></li>
+<li class="fragment"><span class="math inline">\(&gt;\)</span> 40 members from <span class="math inline">\(&gt;\)</span> 25 pharma companies, CRO, etc.
 <ul>
 <li class="fragment">open for new members</li>
 </ul></li>
 <li class="fragment">Focuses on
 <ol type="1">
 <li class="fragment">building packages together (already on CRAN are <code>mmrm</code> and <code>brms.mmrm</code>)</li>
-<li class="fragment">disseminating good software engineering (SWE) practices (workshops, videos)</li>
+<li class="fragment">disseminating good software engineering practices (workshops, videos)</li>
 </ol></li>
-<li class="fragment">See more on <a href="openstatsware.org">openstatsware.org</a></li>
+<li class="fragment">Visit <a href="openstatsware.org">openstatsware.org</a> to learn more</li>
 </ul>
 </div>
 </section>
@@ -758,6 +776,10 @@ rather than receiving different solutions from each company</li>
 </ul>
 </div>
 </section>
+<section id="upcoming-seminar-on-reproducibility" class="slide level2">
+<h2>Upcoming seminar on reproducibility</h2>
+
+<img data-src="bbs-seminar.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://baselbiometrics.github.io/home/docs/upcoming/20240412/agenda.pdf">https://baselbiometrics.github.io/home/docs/upcoming/20240412/agenda.pdf</a></p></section>
 <section id="thank-you" class="slide level2">
 <h2>Thank you!</h2>
 <p>These slides are at<br>
@@ -765,7 +787,8 @@ rather than receiving different solutions from each company</li>
 <p>Feel free to connect at<br>
 <a href="https://www.linkedin.com/in/danielsabanesbove/">linkedin.com/in/danielsabanesbove</a></p>
 
-<div class="quarto-auto-generated-content">
+
+<img data-src="research-progress.png" class="r-stretch"><div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Why We Need to Improve Software Engineering in Biostatistics | <a href="http://creativecommons.org/licenses/by-sa/4.0/" title="License: CC BY-SA 4.0">License</a></p>
 </div>
